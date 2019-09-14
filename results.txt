@@ -1,0 +1,23 @@
+Test 1: 
+OK: No solution
+Test 2: 
+OK: No solution
+Test 3: 
+OK: No solution
+Test 4: 
+OK: No solution
+Test 5: 
+OK: No solution
+Test 6: 
+OK: No solution
+Test 7: 
+OK: xp
+OK: xn
+Test 8: 
+OK: xp
+OK: xn
+Test 9: 
+OK: xp
+OK: xn
+Test 10: 
+OK: No solution
