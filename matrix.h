@@ -13,10 +13,7 @@
 #define false 0
 
 /* Uncomment the below line for input from files */
-#define FILE_IN 1
-
-/* Uncomment the below line to have input prompts */
-/* #define INTERACTIVE 1 */
+/* #define FILE_IN 1 */
 
 /* Preprocessor directives for debugging */
 /* #define DEBUG_MAIN 1 */
@@ -57,6 +54,7 @@ int min(int a, int b)
     return (a < b) ? a : b;
 }
 
+/* Return a pointer to a matrix struct after allocating appropriate space for data */
 matrix *newMatrix(int rows, int cols)
 {
     int i;
@@ -71,6 +69,7 @@ matrix *newMatrix(int rows, int cols)
     return m;
 }
 
+/* Read data to a matrix from a file pointer (stdin for console) */
 void readMatrix(matrix *m, FILE *fp)
 {
     int row, col;
@@ -83,6 +82,7 @@ void readMatrix(matrix *m, FILE *fp)
     }
 }
 
+/* Print content of a matrix */
 void printMatrix(matrix *m)
 {
     int row, col;
@@ -97,6 +97,7 @@ void printMatrix(matrix *m)
     }
 }
 
+/* Switch two rows - row1 and row 2 */
 void switchRows(matrix *m, int row1, int row2)
 {
     double *arr = calloc(m->cols, sizeof(double));
@@ -121,6 +122,7 @@ void switchRows(matrix *m, int row1, int row2)
     free(arr);
 }
 
+/* Switch two columns - col1 and col2 */
 void switchColumns(matrix *m, int col1, int col2)
 {
     double *arr = calloc(m->rows, sizeof(double));
@@ -149,6 +151,7 @@ void switchColumns(matrix *m, int col1, int col2)
     free(arr);
 }
 
+/* Convert a matrix to rref form */
 void rref(matrix *A, matrix *b)
 {
     int pivotRow = 0;
@@ -325,6 +328,7 @@ matrix *particularSolution(matrix *R, matrix *b)
     return xp;
 }
 
+/* Check if a number is approximately zero, upto a threshold. Used to deal with precision issues */
 _Bool isZero(double a, double threshold)
 {
     if (a >= -threshold && a <= threshold)
@@ -334,6 +338,7 @@ _Bool isZero(double a, double threshold)
     return false;
 }
 
+/* Deduce null space solution from an rref matrix */
 matrix *nullspaceSolution(matrix *R)
 {
 #ifdef DEBUG_NS
@@ -423,11 +428,11 @@ matrix *nullspaceSolution(matrix *R)
         }
     }
 
-    /* Switch rows in xn in the reverse order of the column swaps done in A */
+    /* Switch rows in xn in the reverse order of the column swaps done in A.
+        Stack is last-in first-out */
     while (length--)
     {
         switchRows(xn, pop(sA), pop(sB));
     }
-
     return xn;
 }

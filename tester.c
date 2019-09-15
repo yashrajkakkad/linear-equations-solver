@@ -6,9 +6,8 @@ _Bool checkNullspaceSolution(matrix *A, matrix *xn);
 
 int main()
 {
-    /* The tester works only if INTERACTIVE is not defined and FILE_IN is. 
+/* The tester works only if INTERACTIVE is not defined and FILE_IN is. 
     This is because INTERACTIVE print statements are also printed in the output */
-#ifndef INTERACTIVE
 #ifdef FILE_IN
     FILE *fin, *fout, *fp;
     int t, m, n, mn, nn;
@@ -65,7 +64,6 @@ int main()
     fclose(fin);
     fclose(fout);
     fclose(fp);
-#endif
 #endif
     return 0;
 }

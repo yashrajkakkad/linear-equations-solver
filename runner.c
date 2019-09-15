@@ -9,24 +9,24 @@ int main()
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 #endif
-#ifdef INTERACTIVE
+#ifndef FILE_IN
     printf("Enter number of test cases: ");
 #endif
     scanf("%d", &t);
     for (z = 0; z < t; z++)
     {
-#ifdef INTERACTIVE
+#ifndef FILE_IN
         printf("Enter m and n: ");
 #endif
-        printf("Test %d\n", z + 1);
         scanf("%d %d", &m, &n);
+        printf("Test %d\n", z + 1);
         A = newMatrix(m, n);
-#ifdef INTERACTIVE
+#ifndef FILE_IN
         printf("Enter A: \n");
 #endif
         readMatrix(A, stdin);
         b = newMatrix(m, 1);
-#ifdef INTERACTIVE
+#ifndef FILE_IN
         printf("Enter b: \n");
 #endif
         readMatrix(b, stdin);
