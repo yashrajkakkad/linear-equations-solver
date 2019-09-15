@@ -1,3 +1,3 @@
-main: matrix.c
-	gcc -o goo matrix.c
-
+main:
+	gcc runner.c -o runner.o
+	gcc tester.c -o tester.o

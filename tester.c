@@ -1,59 +1,56 @@
 #include <stdio.h>
-#include "matrix.c"
+#include "matrix.h"
 
 _Bool checkParticularSolution(matrix *A, matrix *xp, matrix *b);
 _Bool checkNullspaceSolution(matrix *A, matrix *xn);
 
 int main()
 {
+    /* The tester works only if INTERACTIVE is not defined and FILE_IN is. 
+    This is because INTERACTIVE print statements are also printed in the output */
+#ifndef INTERACTIVE
+#ifdef FILE_IN
     FILE *fin, *fout, *fp;
     int t, m, n, mn, nn;
-    char solution[100];
-    int i;
+    char solution[100], dummy[100];
+    int i, dummyI;
     matrix *A, *xn, *xp, *b;
-    fin = fopen("intinput.txt", "r");
-    fout = fopen("intoutput.txt", "r");
+    fin = fopen("input.txt", "r");
+    fout = fopen("output.txt", "r");
     fp = fopen("results.txt", "w");
     fscanf(fin, "%d", &t);
-    printf("%d\n", t);
     for (i = 0; i < t; i++)
     {
-        printf("Test %d: \n", i + 1);
         fprintf(fp, "Test %d: \n", i + 1);
         fscanf(fin, "%d %d", &m, &n);
-        printf("%d %d\n", m, n);
+        fscanf(fout, "%s %d", dummy, &dummyI);
         A = newMatrix(m, n);
         readMatrix(A, fin);
         b = newMatrix(m, 1);
         readMatrix(b, fin);
         fscanf(fout, "%s", solution);
-        printf("%s", solution);
         if (strcmp(solution, "No-solution") == 0)
         {
             fprintf(fp, "OK: No solution\n");
             continue;
         }
+        fscanf(fout, "%s", dummy);
         xp = newMatrix(n, 1);
         readMatrix(xp, fout);
-        printMatrix(xp);
         if (checkParticularSolution(A, xp, b))
         {
-            printf("Particular solution matches\n");
             fprintf(fp, "OK: xp\n");
         }
         else
         {
-            printf("Particular solution doesn't match\n");
             fprintf(fp, "ERROR: xp doesn't match\n");
         }
-        if (!strcmp(solution, "Unique"))
+        if (!strcmp(solution, "Unique-solution"))
         {
-            printf("Unique solution detected\n");
             continue;
         }
-        printf("Infinite solution detected\n");
+        fscanf(fout, "%s", dummy);
         fscanf(fout, "%d %d", &mn, &nn);
-        printf("%d %d\n", mn, nn);
         xn = newMatrix(mn, nn);
         readMatrix(xn, fout);
         if (checkNullspaceSolution(A, xn))
@@ -64,11 +61,13 @@ int main()
         {
             fprintf(fp, "ERROR: xn doesn't match\n");
         }
-        printMatrix(xn);
     }
     fclose(fin);
     fclose(fout);
     fclose(fp);
+#endif
+#endif
+    return 0;
 }
 
 _Bool checkParticularSolution(matrix *A, matrix *xp, matrix *b)

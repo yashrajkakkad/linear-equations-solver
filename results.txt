@@ -1,23 +1,246 @@
 Test 1: 
-OK: No solution
+OK: xp
+OK: xn
 Test 2: 
 OK: No solution
 Test 3: 
 OK: No solution
 Test 4: 
-OK: No solution
+OK: xp
+OK: xn
 Test 5: 
-OK: No solution
+OK: xp
+OK: xn
 Test 6: 
-OK: No solution
+OK: xp
+OK: xn
 Test 7: 
 OK: xp
 OK: xn
 Test 8: 
-OK: xp
-OK: xn
-Test 9: 
-OK: xp
-OK: xn
-Test 10: 
 OK: No solution
+Test 9: 
+OK: No solution
+Test 10: 
+OK: xp
+OK: xn
+Test 11: 
+OK: No solution
+Test 12: 
+OK: No solution
+Test 13: 
+OK: No solution
+Test 14: 
+OK: No solution
+Test 15: 
+OK: No solution
+Test 16: 
+OK: No solution
+Test 17: 
+OK: xp
+OK: xn
+Test 18: 
+OK: xp
+OK: xn
+Test 19: 
+OK: xp
+OK: xn
+Test 20: 
+OK: No solution
+Test 21: 
+OK: No solution
+Test 22: 
+OK: xp
+Test 23: 
+OK: xp
+OK: xn
+Test 24: 
+OK: No solution
+Test 25: 
+OK: xp
+OK: xn
+Test 26: 
+OK: xp
+OK: xn
+Test 27: 
+OK: No solution
+Test 28: 
+OK: xp
+OK: xn
+Test 29: 
+OK: No solution
+Test 30: 
+OK: No solution
+Test 31: 
+OK: No solution
+Test 32: 
+OK: xp
+OK: xn
+Test 33: 
+OK: xp
+OK: xn
+Test 34: 
+OK: xp
+OK: xn
+Test 35: 
+OK: No solution
+Test 36: 
+OK: xp
+OK: xn
+Test 37: 
+OK: xp
+OK: xn
+Test 38: 
+OK: xp
+OK: xn
+Test 39: 
+OK: No solution
+Test 40: 
+OK: xp
+OK: xn
+Test 41: 
+OK: xp
+OK: xn
+Test 42: 
+OK: No solution
+Test 43: 
+OK: xp
+OK: xn
+Test 44: 
+OK: xp
+OK: xn
+Test 45: 
+OK: xp
+OK: xn
+Test 46: 
+OK: xp
+Test 47: 
+OK: No solution
+Test 48: 
+OK: xp
+OK: xn
+Test 49: 
+OK: xp
+OK: xn
+Test 50: 
+OK: xp
+OK: xn
+Test 51: 
+OK: No solution
+Test 52: 
+OK: xp
+OK: xn
+Test 53: 
+OK: xp
+Test 54: 
+OK: No solution
+Test 55: 
+OK: xp
+OK: xn
+Test 56: 
+OK: No solution
+Test 57: 
+OK: No solution
+Test 58: 
+OK: xp
+OK: xn
+Test 59: 
+OK: No solution
+Test 60: 
+OK: xp
+Test 61: 
+OK: xp
+OK: xn
+Test 62: 
+OK: xp
+Test 63: 
+OK: No solution
+Test 64: 
+OK: xp
+OK: xn
+Test 65: 
+OK: No solution
+Test 66: 
+OK: No solution
+Test 67: 
+OK: xp
+Test 68: 
+OK: No solution
+Test 69: 
+OK: xp
+Test 70: 
+OK: No solution
+Test 71: 
+OK: xp
+OK: xn
+Test 72: 
+OK: xp
+Test 73: 
+OK: No solution
+Test 74: 
+OK: No solution
+Test 75: 
+OK: No solution
+Test 76: 
+OK: xp
+Test 77: 
+OK: xp
+OK: xn
+Test 78: 
+OK: xp
+OK: xn
+Test 79: 
+OK: No solution
+Test 80: 
+OK: xp
+OK: xn
+Test 81: 
+OK: No solution
+Test 82: 
+OK: xp
+OK: xn
+Test 83: 
+OK: xp
+OK: xn
+Test 84: 
+OK: No solution
+Test 85: 
+OK: No solution
+Test 86: 
+OK: xp
+OK: xn
+Test 87: 
+OK: xp
+Test 88: 
+OK: No solution
+Test 89: 
+OK: No solution
+Test 90: 
+OK: xp
+OK: xn
+Test 91: 
+OK: No solution
+Test 92: 
+OK: No solution
+Test 93: 
+OK: No solution
+Test 94: 
+OK: xp
+OK: xn
+Test 95: 
+OK: xp
+OK: xn
+Test 96: 
+OK: xp
+Test 97: 
+OK: xp
+OK: xn
+Test 98: 
+OK: xp
+OK: xn
+Test 99: 
+OK: xp
+OK: xn
+Test 100: 
+OK: xp
+OK: xn
