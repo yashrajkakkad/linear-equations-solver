@@ -1,6 +1,6 @@
 # Linear System of Equations Solver
 
-Solve any system of linear equations and determine if there's unique, infinite or no solutions. If there are infinite solutions, null space is determined using Reduced Row Echelon Form Method.
+Solve any system of linear equations using the method of Gauss-Jordan elimination and determine if there's unique, infinite or no solutions. If there are infinite solutions, null space is determined using Reduced Row Echelon Form Method.
 
 ## Instructions
 
